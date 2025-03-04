@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #492ed1;
+    color: white;
+}
+
+header li{
+    display: inline;
+    margin-left: 8px;
+    font-size: 18px;
+
+}
+
+header nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.container {
+    max-width: 1000px;
+    width: 80%;
+    margin: 0px auto;}
+
+header .container, 
+section .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;}
+
+.brands-list img {
+    height: 24px;
+}    
+.brands-list li{ 
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container{align-items: flex-start; }
+
+section {padding: 24px 0; }
+section h2{
+    margin-bottom: 16px;
+
+    }
+section p{margin-bottom: 8px;}
+.store-front{margin-right: 32px;width: 500px;}
+
+
+
+    section{color: #492ed1;}
+
+
+#contact .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+.contact-form{
+    width: 30%;
+}
+.contact-social{
+    width: 30%;
+text-align:center;
+display: flex;}
+
+
+#contact h3{
+    font-size: 12px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.contact-social img{
+    width: 24px;
+}
+    
+form input, textarea, form button{
+    display: block;
+    width: 320px;
+    resize: none;
+    margin-bottom: 8px;
+    padding: 8px;
+
+
+}
+.contact-form, .contact-social, .contact-address { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    width: 30%; 
+    min-height: 160px;}
+    .contact-address p { font-size: 12px;}
+
+form button{background-color: #492ed1;
+color: white;
+border: none;
+cursor: pointer;}
+
+form button:hover{
+    background-color: #6456ac;
+
+}
+form textarea{
+    height: 150px;
+}
+input:focus, textarea:focus{
+    outline-color: #492ed1;
+}
+footer{
+    background-color: #492ed1;
+    color: white;
+    padding: 16px;
+}
