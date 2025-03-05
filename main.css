@@ -4,14 +4,11 @@
     box-sizing: border-box;
 }
 
-header{ padding: 16px 0;
+header{ 
+    padding: 16px 0;
     background-color: #2d0d85;
     color: white;
 }
-
-header h1,
-section h2{ font-weight: normal;} 
-
 header nav li{ 
     display: inline;
     margin: 16px;
@@ -21,19 +18,21 @@ header nav li{
 header nav li a{
     color: white;
     text-decoration: none;
-    
 }
+
 .container {
     max-width: 1280px;
     width: 100%;
-    margin: 0px auto;}
+    margin: 0 auto;
+}
 
 header .container, 
-section .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;}
-
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+        
 .brands-list img {
     height: 24px;
 }    
@@ -42,39 +41,56 @@ section .container {
     margin-right: 8px;
 }
 
-section .container{align-items: flex-start; }
+section .container{
+    align-items: flex-start;
+}
 
-section {padding: 24px 0; }
+section {
+    padding: 24px 0;
+}
 
 section h2{
     margin-bottom: 16px;
-    }
-section{
-        color: #2d0d85;
-    }
-section p{margin-bottom: 8px;}
+}
 
-.store-front{margin-right: 32px;}
+section{
+    color: #2d0d85;
+}
+section p{
+    margin-bottom: 8px;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+.store-front{
+    margin-right: 32px;
+}
 
 .social-links img{ 
     height: 24px;
 }
-.social-links li{
-    display:inline;
-    margin-right: 8px;}
+
+.social-links li{ 
+    display: inline;
+    margin-right: 8px;
+}
 
 .social-links li a{ 
     text-decoration: none;
-    }
+}
+
 #contact .container{
     display:block;
     justify-content: space-between;
-    align-items: flex-start;}
+    align-items: flex-start;
+}
+
 .contact-methods{
-        display: flex;
-        justify-content: space-between;
-    }
-    
+    display: flex;
+    justify-content: space-between;
+}
+
 form input, 
 textarea, 
 form button{
@@ -82,32 +98,38 @@ form button{
     width: 320px;
     resize: none;
     margin-bottom: 8px;
-    padding: 8px;}
+    padding: 8px;
+}
+
 
 form textarea{
-    resize: 180px;;}
+    resize: none;
+    height: 180p;
+}
 
 section h3{
-    margin-bottom: 16px;}
-    
-
-section{color: #2d0d85;}
-
-form button{background-color: #2d0d85;
-color: white;
-border: none;
-cursor: pointer;}
-
-form button:hover{
-    background-color: #6456ac;
-
+    margin-bottom: 16px;
+}
+form button{
+    background-color: #2d0d85;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-input:focus, textarea:focus{
+    
+form button:hover{
+    background-color: #6456ac; 
+    
+}
+
+input:focus, 
+textarea:focus{
     outline-color: #2d0d85;
 }
+    
 footer{
     background-color:#2d0d85;
     color: white;
     padding: 16px;
-}
+}    
