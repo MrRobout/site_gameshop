@@ -1,31 +1,31 @@
 
-* {
-    margin: 0;
+* { margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    padding: 16px 0;
+header{ padding: 16px 0;
     background-color: #2d0d85;
     color: white;
 }
 
-header li{
-    display: inline;
-    margin-left: 8px;
-    font-size: 18px;
+header h1,
+section h2{ font-weight: normal;} 
 
+header nav li{ 
+    display: inline;
+    margin: 16px;
+    font-size: 18px;
 }
 
 header nav li a{
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    
 }
 .container {
-    max-width: 1000px;
-    width: 80%;
+    max-width: 1280px;
+    width: 100%;
     margin: 0px auto;}
 
 header .container, 
@@ -45,65 +45,53 @@ section .container {
 section .container{align-items: flex-start; }
 
 section {padding: 24px 0; }
+
 section h2{
     margin-bottom: 16px;
-
+    }
+section{
+        color: #2d0d85;
     }
 section p{margin-bottom: 8px;}
-.store-front{margin-right: 32px;width: 500px;}
 
+.store-front{margin-right: 32px;}
 
+.social-links img{ 
+    height: 24px;
+}
+.social-links li{
+    display:inline;
+    margin-right: 8px;}
 
-    section{color: #2d0d85;}
-
-
+.social-links li a{ 
+    text-decoration: none;
+    }
 #contact .container{
-    display: flex;
+    display:block;
     justify-content: space-between;
-    align-items: flex-start;
-}
-
-.social-links{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    gap: 10px;
-}
-.contact-form{
-    width: 30%;
-}
-.contact-social{
-    width: 30%;
-text-align:center;
-display: flex;}
-
-
-#contact h3{
-    font-size: 12px;
-    margin-bottom: 16px;
-    text-transform: uppercase;
-}
-.contact-social img{
-    width: 24px;
-}
+    align-items: flex-start;}
+.contact-methods{
+        display: flex;
+        justify-content: space-between;
+    }
     
-form input, textarea, form button{
+form input, 
+textarea, 
+form button{
     display: block;
     width: 320px;
     resize: none;
     margin-bottom: 8px;
-    padding: 8px;
+    padding: 8px;}
 
+form textarea{
+    resize: 180px;;}
 
-}
-.contact-form, .contact-social, .contact-address { 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    width: 30%; 
-    min-height: 160px;}
-    .contact-address p { font-size: 12px;}
+section h3{
+    margin-bottom: 16px;}
+    
+
+section{color: #2d0d85;}
 
 form button{background-color: #2d0d85;
 color: white;
@@ -114,9 +102,7 @@ form button:hover{
     background-color: #6456ac;
 
 }
-form textarea{
-    height: 150px;
-}
+
 input:focus, textarea:focus{
     outline-color: #2d0d85;
 }
@@ -125,8 +111,3 @@ footer{
     color: white;
     padding: 16px;
 }
-@media (max-width: 768px) 
-{ .container { width: 90%; } header .container { flex-direction: column; text-align: center; } 
-nav ul { padding-top: 10px; } .store-front { width: 100%; margin-right: 0; } 
-.contact-form, .contact-social, .contact-address { width: 100%; } 
-form input, textarea, form button { width: 100%; } }
