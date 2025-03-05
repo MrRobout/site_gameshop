@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 
 header{
     padding: 16px 0;
-    background-color: #492ed1;
+    background-color: #2d0d85;
     color: white;
 }
 
@@ -53,14 +54,13 @@ section p{margin-bottom: 8px;}
 
 
 
-    section{color: #492ed1;}
+    section{color: #2d0d85;}
 
 
 #contact .container{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-   
 }
 
 .social-links{
@@ -105,7 +105,7 @@ form input, textarea, form button{
     min-height: 160px;}
     .contact-address p { font-size: 12px;}
 
-form button{background-color: #492ed1;
+form button{background-color: #2d0d85;
 color: white;
 border: none;
 cursor: pointer;}
@@ -118,10 +118,15 @@ form textarea{
     height: 150px;
 }
 input:focus, textarea:focus{
-    outline-color: #492ed1;
+    outline-color: #2d0d85;
 }
 footer{
-    background-color: #492ed1;
+    background-color:#2d0d85;
     color: white;
     padding: 16px;
 }
+@media (max-width: 768px) 
+{ .container { width: 90%; } header .container { flex-direction: column; text-align: center; } 
+nav ul { padding-top: 10px; } .store-front { width: 100%; margin-right: 0; } 
+.contact-form, .contact-social, .contact-address { width: 100%; } 
+form input, textarea, form button { width: 100%; } }
